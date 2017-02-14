@@ -1,0 +1,30 @@
+*, html, body{ margin: 0; padding: 0;list-style:none; outline: none; text-decoration: none;  box-sizing: border-box;}
+body{ padding: 30px;}
+.cont{ width: 100%; height: auto; display: flex; justify-content: space-between;}
+.red{ width: 25%; height: 100px; background: red;}
+.orange{ width: 50%; height: 100px; background: orange;}
+.cont2{ margin-top: 100px;}
+.green{ width: 20%;  height: 600px; background: green; float: right;}
+.cont-blue{ width: 75%;  height: auto; float: left; display: flex; justify-content: space-between; flex-wrap: wrap;}
+.blue{ width: 30%; height: 300px; background: blue}
+.blue-last{ width: 100%; margin-top: 30px; height: 250px;}
+@media screen and (max-width:740px){
+    body{ padding: 20px;}
+    .red{ width: 30%; height: 120px;}
+    .orange{ width: 65%; height: 120px;}
+    .cont2{ margin-top: 30px;}
+    .green{ width: 100%;  height:100px; float: none;}
+    .cont-blue{ width: 100%; float: none; margin-top: 30px;}
+    .blue{ width: 47.5%; height: 350px;}
+    .blue:nth-child(3){ display: none;}
+    .blue-last{ width: 100%; height: 250px;}
+}
+@media screen and (max-width:400px){
+    body{ padding: 10px;}
+    .cont{ width: 100%; height: auto; display: block;}
+    .red{ width: 100%; height: 60px;}
+    .orange{ width: 100%; height: 60px; margin-top: 20px;}
+    .cont2, .cont-blue{ margin-top:0px;}
+    .green{ display: none;}
+    .blue{ width: 100%; height: 300px; margin-top: 25px;}
+}
